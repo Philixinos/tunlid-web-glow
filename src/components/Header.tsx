@@ -1,6 +1,6 @@
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
-import logo from "@/assets/tunlid-logo.jpg";
+import logo from "@/assets/tunlid-media-logo.svg";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,7 +18,7 @@ const Header = () => {
       <div className="container">
         <nav className="flex items-center justify-between h-16 md:h-20">
           <div className="flex items-center gap-3">
-            <img src={logo} alt="Tunlid Media" className="h-8 md:h-10" />
+            <img src={logo} alt="Tunlid Media" className="h-10 md:h-12" />
             <span className="text-xl md:text-2xl font-bold font-heading tracking-tight">
               TUNLID MEDIA
             </span>
