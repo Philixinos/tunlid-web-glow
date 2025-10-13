@@ -1,93 +1,43 @@
-import { useState } from "react";
 import { Button } from "./ui/button";
-import { Input } from "./ui/input";
-import { Textarea } from "./ui/textarea";
-import { toast } from "sonner";
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: ""
-  });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    
-    const subject = encodeURIComponent("Förfrågan från webbplatsen");
-    const body = encodeURIComponent(
-      `Namn: ${formData.name}\nE-post: ${formData.email}\n\nMeddelande:\n${formData.message}`
-    );
-    
-    window.location.href = `mailto:kontakt@tunlid.media?subject=${subject}&body=${body}`;
-    
-    toast.success("E-postprogrammet öppnas...");
-    setFormData({ name: "", email: "", message: "" });
-  };
-
   return (
-    <section id="contact" className="py-16 md:py-24 bg-card">
+    <section id="contact" className="py-16 md:py-24">
       <div className="container">
-        <div className="max-w-2xl mx-auto">
-          <div className="text-center mb-10">
-            <h2 className="text-3xl md:text-4xl font-bold font-heading mb-4">Boka sändning</h2>
-            <p className="text-lg text-muted-foreground">
-              Berätta datum, arena och behov – så återkommer vi snabbt med upplägg och pris.
-            </p>
+        <div className="max-w-4xl mx-auto space-y-12">
+          {/* Kontakt section */}
+          <div className="border border-border rounded-2xl p-8 md:p-12">
+            <h2 className="text-4xl md:text-5xl font-bold font-heading mb-8">Kontakt</h2>
+            
+            <div className="space-y-4 mb-8">
+              <p className="text-xl">
+                <span className="font-bold">E-post:</span> kontakt@tunlid.media
+              </p>
+              <p className="text-xl">
+                <span className="font-bold">Telefon:</span> 070-000 00 00
+              </p>
+              <p className="text-xl">
+                <span className="font-bold">Bas:</span> Sverige – rörlig produktion
+              </p>
+            </div>
+
+            <Button 
+              size="lg" 
+              variant="outline"
+              className="border-primary text-primary hover:bg-primary hover:text-primary-foreground font-medium"
+            >
+              Tillgängliga kvällar & helger
+            </Button>
           </div>
 
-          <form onSubmit={handleSubmit} className="space-y-6">
-            <div>
-              <label htmlFor="name" className="block text-sm font-medium mb-2">
-                För- och efternamn
-              </label>
-              <Input
-                id="name"
-                type="text"
-                required
-                value={formData.name}
-                onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                className="w-full"
-              />
-            </div>
-
-            <div>
-              <label htmlFor="email" className="block text-sm font-medium mb-2">
-                E-post
-              </label>
-              <Input
-                id="email"
-                type="email"
-                required
-                value={formData.email}
-                onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                className="w-full"
-              />
-            </div>
-
-            <div>
-              <label htmlFor="message" className="block text-sm font-medium mb-2">
-                Beskrivning
-              </label>
-              <Textarea
-                id="message"
-                required
-                rows={6}
-                placeholder="Sport, datum, plats, ungefärligt schema, önskade leveranser…"
-                value={formData.message}
-                onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                className="w-full"
-              />
-            </div>
-
-            <Button type="submit" size="lg" className="w-full font-semibold">
-              Skicka förfrågan
-            </Button>
-
-            <p className="text-sm text-center text-muted-foreground">
-              Meddelandet öppnas i ditt e-postprogram och skickas till kontakt@tunlid.media
+          {/* Teknik & plattformar section */}
+          <div className="border border-border rounded-2xl p-8 md:p-12">
+            <h2 className="text-4xl md:text-5xl font-bold font-heading mb-8">Teknik & plattformar</h2>
+            
+            <p className="text-xl leading-relaxed">
+              vMix • OBS • Blackmagic • NDI/SDI • SRT/RTMP • YouTube Live • Facebook Live • Solidsport
             </p>
-          </form>
+          </div>
         </div>
       </div>
     </section>
