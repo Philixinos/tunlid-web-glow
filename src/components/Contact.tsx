@@ -11,10 +11,10 @@ const Contact = () => {
             
             <div className="space-y-4 mb-8">
               <p className="text-xl">
-                <span className="font-bold">E-post:</span> kontakt@tunlid.media
+                <span className="font-bold">E-post:</span> kontakt@tunlidmedia.se
               </p>
               <p className="text-xl">
-                <span className="font-bold">Telefon:</span> 070-000 00 00
+                <span className="font-bold">Telefon:</span> 070-938 74 80
               </p>
               <p className="text-xl">
                 <span className="font-bold">Bas:</span> Sverige – rörlig produktion
