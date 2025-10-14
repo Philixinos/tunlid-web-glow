@@ -18,7 +18,7 @@ const Contact = () => {
               </p>
               <p className="text-xl">
                 <span className="font-bold">Adress:</span> Askims Furuväg 3<br />
-                <span className="inline-block w-24"></span>436 40 Askim
+                <span className="ml-24">436 40 Askim</span>
               </p>
               <p className="text-xl">
                 556937-0975 | Godkänd för F-skatt
