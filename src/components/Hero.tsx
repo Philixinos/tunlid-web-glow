@@ -23,21 +23,13 @@ const Hero = () => {
             intervjuer, highlights och sociala medier. Optimerat för YouTube, Facebook, Solidsport m.fl.
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
+          <div className="flex justify-center mb-16">
             <Button 
               size="lg" 
               onClick={scrollToContact}
               className="text-base font-semibold"
             >
               Boka ett samtal
-            </Button>
-            <Button 
-              size="lg" 
-              variant="outline"
-              onClick={() => document.getElementById("services")?.scrollIntoView({ behavior: "smooth" })}
-              className="text-base font-semibold"
-            >
-              Se tjänster
             </Button>
           </div>
 
