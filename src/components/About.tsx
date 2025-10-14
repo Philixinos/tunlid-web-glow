@@ -28,7 +28,6 @@ const About = () => {
             </p>
 
             <div className="mb-6">
-              <h4 className="text-xl font-bold font-heading mb-4">Akut livesändning inom 24 h</h4>
               <ul className="space-y-3">
                 {features.map((feature, index) => (
                   <li key={index} className="flex items-start gap-3">

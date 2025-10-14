@@ -24,14 +24,6 @@ const Contact = () => {
                 556937-0975 | Godkänd för F-skatt
               </p>
             </div>
-
-            <Button 
-              size="lg" 
-              variant="outline"
-              className="border-primary text-primary hover:bg-primary hover:text-primary-foreground font-medium"
-            >
-              Tillgängliga kvällar & helger
-            </Button>
           </div>
 
         </div>
