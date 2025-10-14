@@ -32,8 +32,6 @@ const Contact = () => {
 
           {/* Teknik & plattformar section */}
           <div className="border border-border rounded-2xl p-8 md:p-12">
-            <h2 className="text-4xl md:text-5xl font-bold font-heading mb-8">Teknik & plattformar</h2>
-            
             <p className="text-xl leading-relaxed">
               vMix • OBS • Blackmagic • NDI/SDI • SRT/RTMP • YouTube Live • Facebook Live • Solidsport
             </p>
