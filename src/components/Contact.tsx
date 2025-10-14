@@ -30,12 +30,6 @@ const Contact = () => {
             </Button>
           </div>
 
-          {/* Teknik & plattformar section */}
-          <div className="border border-border rounded-2xl p-8 md:p-12">
-            <p className="text-xl leading-relaxed">
-              vMix • OBS • Blackmagic • NDI/SDI • SRT/RTMP • YouTube Live • Facebook Live • Solidsport
-            </p>
-          </div>
         </div>
       </div>
     </section>
