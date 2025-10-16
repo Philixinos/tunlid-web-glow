@@ -14,7 +14,7 @@ const Clients = () => {
   ];
 
   // Duplicate logos for seamless loop
-  const duplicatedLogos = [...logos, ...logos, ...logos];
+  const duplicatedLogos = [...logos, ...logos];
 
   return (
     <section className="py-16 md:py-24">
@@ -29,7 +29,7 @@ const Clients = () => {
           <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-background to-transparent z-10" />
           
           {/* Scrolling container */}
-          <div className="flex animate-scroll-logos">
+          <div className="flex animate-scroll-logos w-max">
             {duplicatedLogos.map((logo, index) => (
               <div
                 key={index}
