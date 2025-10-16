@@ -39,7 +39,7 @@ const Clients = () => {
                 <img
                   src={logo.src}
                   alt={logo.alt}
-                  className="h-full w-auto object-contain opacity-70 hover:opacity-100 transition-opacity duration-300"
+                  className={`${logo.alt === "TSN" ? "h-[200px]" : "h-full"} w-auto object-contain opacity-70 hover:opacity-100 transition-opacity duration-300`}
                 />
               </div>
             ))}
