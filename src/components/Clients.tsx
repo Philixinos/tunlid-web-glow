@@ -13,8 +13,8 @@ const Clients = () => {
     { src: logoTSN, alt: "TSN" },
   ];
 
-  // Duplicate logos for seamless loop
-  const duplicatedLogos = [...logos, ...logos];
+  // Triple logos for seamless infinite scroll
+  const duplicatedLogos = [...logos, ...logos, ...logos];
 
   return (
     <section className="py-16 md:py-24">
