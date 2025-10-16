@@ -16,12 +16,10 @@ const Contact = () => {
               <p className="text-xl">
                 <span className="font-bold">Telefon:</span> 070-938 74 80
               </p>
-              <div className="text-xl flex items-start gap-2">
-                <span className="font-bold w-28 shrink-0">Adress:</span>
-                <span>
-                  Askims Furuväg 3<br />436 40 Askim
-                </span>
-              </div>
+              <p className="text-xl">
+                <span className="font-bold">Adress:</span> Askims Furuväg 3<br />
+                <span className="inline-block pl-[6.5rem]">436 40 Askim</span>
+              </p>
               <p className="text-xl">
                 556937-0975 | Godkänd för F-skatt
               </p>
