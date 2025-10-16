@@ -9,16 +9,18 @@ const Contact = () => {
           <div className="border border-border rounded-2xl p-8 md:p-12">
             <h2 className="text-4xl md:text-5xl font-bold font-heading mb-8">Kontakt</h2>
             
-            <div className="space-y-4 mb-8">
+            <div className="space-y-4">
               <p className="text-xl">
                 <span className="font-bold">E-post:</span> info@tunlidmedia.se
               </p>
               <p className="text-xl">
                 <span className="font-bold">Telefon:</span> 070-938 74 80
               </p>
-              <div className="text-xl">
-                <span className="font-bold">Adress:</span> Askims Furuväg 3<br />
-                <span className="inline-block ml-[5.5rem]">436 40 Askim</span>
+              <div className="text-xl flex items-start gap-2">
+                <span className="font-bold w-28 shrink-0">Adress:</span>
+                <span>
+                  Askims Furuväg 3<br />436 40 Askim
+                </span>
               </div>
               <p className="text-xl">
                 556937-0975 | Godkänd för F-skatt
